@@ -1,18 +1,17 @@
-function updateTime(){
-    //Lisbon
-let lisbonElement = document.querySelector("#lisbon");
+function updateTime() {
+  //Lisbon
+  let lisbonElement = document.querySelector("#lisbon");
 
-if (lisbonlement) {
-  let lisbonDateElement = lisbonElement.querySelector(".date");
-  let lisbonTimeElement = lisbonElement.querySelector(".time");
-  let lisbonTime = moment().tz("America/Los_Angeles");
+  if (lisbonElement) {
+    let lisbonDateElement = lisbonElement.querySelector(".date");
+    let lisbonTimeElement = lisbonElement.querySelector(".time");
+    let lisbonTime = moment().tz("Europe/Lisbon");
 
-  llisbonDateElement.innerHTML = lisbonTime.format("MMMM Do YYYY");
-  lisbonTimeElement.innerHTML = lisbonTime.format(
-    "h:mm:ss [<small>]A[</small>]",
-  );
-}
-
+    lisbonDateElement.innerHTML = lisbonTime.format("MMMM Do YYYY");
+    lisbonTimeElement.innerHTML = lisbonTime.format(
+      "h:mm:ss [<small>]A[</small>]",
+    );
+  }
   // Luxembourg
   let luxembourgElement = document.querySelector("#luxembourg");
   if (luxembourgElement) {
@@ -22,7 +21,7 @@ if (lisbonlement) {
 
     luxembourgDateElement.innerHTML = luxembourgTime.format("MMMM Do YYYY");
     luxembourgTimeElement.innerHTML = luxembourgTime.format(
-      "h:mm:ss [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]",
     );
   }
 }
@@ -42,8 +41,8 @@ function updateCity(event) {
       <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
     </div>
     <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
-    "A"
-  )}</small></div>
+      "A",
+    )}</small></div>
   </div>
   `;
 }
