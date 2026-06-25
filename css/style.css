@@ -37,7 +37,7 @@ body {
 
 .time {
   font-size: 32px;
-  font: weight 800px; 
+  font-weight: 800; 
   white-space: nowrap;
 }
 
