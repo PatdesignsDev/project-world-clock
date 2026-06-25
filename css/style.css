@@ -1,6 +1,6 @@
 body {
   background-color: #f9f7fe;
-  background-image: url(https://www.magnific.com/free-vector/isolated-world-map-minimal-style-vector-design_425697831.htm#fromView=search&page=1&position=0&uuid=851edbd8-e1eb-4bde-8ac8-8811d155a529&query=world+map);
+  background-image: url(https://pixabay.com/pt/images/download/teefarm-map-1974699_1920.png);
   font-family: sans-serif;
   min-height: 100vh;
   background-size: cover;
@@ -55,6 +55,7 @@ h1 {
   text-align: center;
   font-family: sans-serif;
   font-size: 36px;
+  font-weight: bolder;
 }
 
 h2 {
