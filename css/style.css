@@ -21,6 +21,9 @@ body {
   margin: 10px 0;
   justify-content: space-between;
   padding: 30px 0;
+  align-items: center; /* alinha verticalmente nome e hora */
+  flex-wrap: wrap; /* permite quebrar para a linha de baixo em vez de sobrepor */
+  gap: 10px;
   border-bottom: 1px dashed rgb(0, 0, 0, 0.2);
 }
 
@@ -34,7 +37,8 @@ body {
 
 .time {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: bolder;
+  white-space: nowrap;
 }
 
 .time small {
@@ -60,11 +64,21 @@ h1 {
 
 h2 {
   margin: 0 0 5px;
-  font-size: 28px;
+  font-size: 26px;
+  font-weight: bolder;
+  white-space: nowrap; /* "Luxembourg 🇱🇺" nunca quebra a meio */
 }
 
 footer {
   text-align: center;
   font-size: 12px;
   color: rgb(0, 0, 0, 0.8);
+}
+
+@media (max-width: 480px) {
+  .city {
+    flex-direction: column; /* nome em cima, hora por baixo */
+    align-items: flex-start;
+    text-align: left;
+  }
 }
